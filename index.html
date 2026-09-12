@@ -215,12 +215,13 @@ h1{
 .fill{height:100%;background:var(--yellow);border-radius:99px}
 
 /* ABOUT */
-.about{display:grid;grid-template-columns:1fr 1.18fr;background:rgba(255,253,249,.58)}
+.about{display:grid;grid-template-columns:62fr 1.38fr;background:rgba(255,253,249,.58)}
 .about-photo{
   position:relative;
   display:flex;
   justify-content:center;
   align-items:center;
+  overflow:hidden;
   padding:30px 0;
   background:
     radial-gradient(circle at 40% 30%,rgba(255,255,255,.32),transparent 17%),
@@ -229,9 +230,8 @@ h1{
 }
 
 .about-photo img{
-  width:55%;
+  width:100%;
   height:auto;
-  object-fit:contain;
   display:block;
 }
 .about-photo:hover{filter:saturate(1.02) brightness(1.02)}
